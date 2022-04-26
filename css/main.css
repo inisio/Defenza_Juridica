@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: Calibri;
+}
+
+
+.menu{
+    width: 100%;
+    height: 6rem;
+    flex-direction: column;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    transition: 1s;
+    color: transparent;
+    background: #000;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+
+.menu h1{
+    font-family: 'Kaushan Script', cursive;
+    color:#fff;
+    margin: 0.5rem;
+}
+
+.pantalla{
+    width: 100%;
+    height: 0rem;
+    padding-top: 6rem;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    display: flex;    
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center; 
+    text-decoration: none;
+    background: linear-gradient(to right,#501506f0, #f8c257f8);
+    transition: 1s;
+    overflow: hidden;
+}
+
+.pantalla.active{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    transition: 1s;
+}
+
+.pantalla a{
+    width: 50%;
+    font-family: arial;
+    text-decoration: none;
+    text-align: start;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+    color: transparent;
+    transition: 0.5s;
+}
+
+.pantalla.active a{
+    color: #fff;
+    width: 50%;
+    font-family: arial;
+    text-decoration: none;
+    text-align: start;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+
+.pantalla a:hover{
+    padding-left: 1rem;
+    color: rgb(0, 183, 255);
+    transition: 1s;
+}
+
+
+.menu #botton{
+    width: 2rem;
+    height: 2rem;
+    color:#fff;
+    background-image: url(../img/abajo.svg);
+    fill: #d88d24;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    /*animation: 3s infinite alternate animate;
+    animation-timing-function: ease;*/
+    transform: rotate3d(0,0,0,160deg);
+    transition: 1s;
+}
+
+.menu #botton.active{
+    width: 2rem;
+    height: 2rem;
+    color:#fff;
+    background-image: url(../img/abajo.svg);
+    animation-play-state:paused;
+    transform: rotate3d(1,0,0,160deg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transition: 1s;
+}/*
+@keyframes animate{
+    0%{
+        transform: rotate3d(0,0,0,360deg);
+    }
+    20%{
+        transform: rotate3d(0,1,0,160deg);
+    }
+    30%{
+        transform: rotate3d(0,1,0,160deg);
+    }
+    40%{
+        transform: rotate3d(0,0,0,360deg);
+    }
+    80%{
+        transform: rotate3d(0,0,0,360deg);
+    }
+    100%{
+        transform: rotate3d(0,0,0,360deg);
+    }
+}*/
+
+
+
+.uno{
+    width: 100%;
+    height:45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    background-image: url(../img/fondo3.webp);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: right;
+    
+}
+.uno h1{
+    /*font-family: 'Kaushan Script', cursive;*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    color: #fff;
+}
+.uno h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.uno::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    width: 100%;
+    height:45rem;
+    background: linear-gradient(#000,rgba(0, 0, 0, 0.718),rgba(255, 255, 255, 0.115));
+    z-index: -1;
+}
+.dos{
+    padding: 1rem 0rem;
+    width: 100%;
+    height: auto;
+    background: rgb(184, 130, 63);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.dos .texto{
+    width: 35%;
+    min-width: 28rem;
+    height: auto;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start ;
+    flex-direction: column;
+    text-align: justify;
+}
+.dos .texto h1{
+    min-width: 30rem;
+    font-size: 2rem;
+    margin: 1rem 0rem;
+    font-family: Helvetica;
+}
+
+.dos .texto h2{
+    min-width: 30rem;
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    font-family: Helvetica;
+}
+
+.dos .texto p{
+    font-family: 'Dancing Script', cursive;
+    min-width: 30rem;
+    font-size: 2rem;
+    margin: 0rem 0rem;
+    text-align: end;
+}
+
+.dos .imagen{
+    min-width: 30rem;
+    height: 45rem;
+    width: 40%;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.dos .imagen::after{
+    content: '';
+    position: absolute;
+    min-width: 30rem;
+    height: 45rem;
+    width: 40%;
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    filter: blur(2rem);
+    border-radius: 10rem;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+.tres{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.tres .texto{
+    width: 35%;
+    min-width: 28rem;
+    height: 80%;
+    margin-top: 5rem;
+}
+
+.tres .texto h1{
+    margin-bottom: 1rem;
+    font-family: 'Secular One', sans-serif;
+    color: green;
+    font-size: 3rem;
+}
+
+.tres .texto h2{
+    font-family: arial;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.tres .texto a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    background: linear-gradient(to right,green, rgb(17, 176, 17));
+    color: #fff;  
+    font-family: 'Secular One', sans-serif;
+}
+
+
+.tres .imagen{
+    width: 40%;
+    min-width: 30rem;
+    height: 45rem;
+    background-image: url(../img/fondowhat.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position:  right;
+}
+
+.cuatro{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right,rgb(47, 47, 47), rgb(54, 53, 50));
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+.cuatro .texto{
+    width: 35%;
+    min-width: 28rem;
+    height: auto;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cuatro .texto li{
+    list-style: none;
+}
+
+.cuatro .texto h1{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    margin: 1rem;
+    font-family: Helvetica;
+}
+.cuatro .imagen{
+    width: 40%;
+    min-width: 30rem;
+    height: 45rem;
+    margin-top: 4rem;
+    background-image: url(../img/cafe.webp);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+.cuatro .fother{
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: justify;
+}
+.cuatro .fother h3{
+    width: 40%;
+    font-size: 0.8rem;
+}
+
+.cinco{
+    width: 100%;
+    height: auto;
+    background: rgb(254, 254, 254);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.cinco .caja_fuerte{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #000;
+    border: #fff;
+    width: auto;
+}
+
+.cinco .baner{
+    margin: 2rem 1rem;
+}
+
+.encabezado{
+    color: #fff;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 3rem;
+    background: #ba8034;
+    font-family: arial;
+}
+
+.cinco .texto{
+    color: #9b9997;
+    font-size: 1rem;
+    width: 20rem;
+    padding: 0.2rem 0rem;
+    margin: 0.2rem 0;
+    text-align: center;
+    font-family: verdana;
+    font-weight: 500;
+    border-bottom: #9b9997 solid 0.1rem ;
+}
+.fother{
+    background: #000;
+    color: rgb(172, 168, 168);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cinco iframe{
+    width: 20rem;
+}
